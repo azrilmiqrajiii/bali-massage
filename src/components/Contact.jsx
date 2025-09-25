@@ -1,0 +1,88 @@
+import { MapPin, Phone, MessageCircle } from "lucide-react";
+
+export default function Contact() {
+  return (
+    <section
+      id="contact"
+      className="py-24 bg-gradient-to-b from-white via-emerald-50 to-white"
+    >
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900 mb-4">
+            Get In Touch with Lestari Bali Spa
+          </h2>
+          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+            Contact us for reservations or inquiries. Our team is ready to
+            assist you promptly and with a friendly service.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-12 items-start">
+          <div className="space-y-8">
+            <div className="flex items-start space-x-4 bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition">
+              <MapPin className="text-emerald-600 w-8 h-8 flex-shrink-0" />
+              <div>
+                <h3 className="font-semibold text-lg text-gray-900 mb-1">
+                  Address
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Padangsambian Klod, Denpasar, Bali
+                  <br />
+                  <a
+                    href="https://maps.app.goo.gl/1wy9gA76sh4zxMhA7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-emerald-600 font-medium hover:underline"
+                  >
+                    📍 View on Google Maps
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start space-x-4 bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition">
+              <Phone className="text-emerald-600 w-8 h-8 flex-shrink-0" />
+              <div>
+                <h3 className="font-semibold text-lg text-gray-900 mb-1">
+                  Phone
+                </h3>
+                <p className="text-gray-600">+62 859-3435-8938</p>
+              </div>
+            </div>
+
+            {/* WhatsApp */}
+            <div className="flex items-start space-x-4 bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition">
+              <MessageCircle className="text-emerald-600 w-8 h-8 flex-shrink-0" />
+              <div>
+                <h3 className="font-semibold text-lg text-gray-900 mb-3">
+                  WhatsApp
+                </h3>
+                <a
+                  href="https://wa.me/6285934358938?text=Halo,%20saya%20mau%20booking%20massage"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-full shadow-md transition transform hover:scale-105"
+                >
+                  💬 Chat via WhatsApp
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="rounded-2xl overflow-hidden shadow-xl border border-gray-200">
+            <iframe
+              src="https://maps.google.com/maps?q=-8.6835383,115.179601&z=16&output=embed"
+              width="100%"
+              height="400"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Lestari Bali Spa Location"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
