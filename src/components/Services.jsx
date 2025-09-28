@@ -7,87 +7,19 @@ import deep from "../assets/deep.jpg";
 import thaiMassage from "../assets/thaiMasage.jpg";
 
 const services = [
-  {
-    name: "Balinese Massage",
-    image: massagebali,
-    prices: [
-      { duration: "60 minute", price: "250k" },
-      { duration: "90 minute", price: "350k" },
-      { duration: "120 minute", price: "450k" },
-    ],
-  },
-  {
-    name: "Reflexology",
-    image: reflexology,
-    prices: [
-      { duration: "60 minute", price: "200k" },
-      { duration: "90 minute", price: "250k" },
-      { duration: "120 minute", price: "350k" },
-    ],
-  },
-  {
-    name: "Facial Acupressure",
-    image:
-      "https://images.pexels.com/photos/6628820/pexels-photo-6628820.jpeg?auto=compress&cs=tinysrgb&w=800",
-    prices: [
-      { duration: "60 minute", price: "300k" },
-      { duration: "90 minute", price: "400k" },
-      { duration: "120 minute", price: "500k" },
-    ],
-  },
-  {
-    name: "Massage & Scrub",
-    image: scrub,
-    prices: [
-      { duration: "60 minute", price: "300k" },
-      { duration: "90 minute", price: "400k" },
-      { duration: "120 minute", price: "500k" },
-    ],
-  },
-  {
-    name: "Hot Stone Massage",
-    image: hotstone,
-    prices: [
-      { duration: "60 minute", price: "300k" },
-      { duration: "90 minute", price: "400k" },
-      { duration: "120 minute", price: "500k" },
-    ],
-  },
-  {
-    name: "Aromatherapy",
-    image: aromateraphy,
-    prices: [
-      { duration: "60 minute", price: "300k" },
-      { duration: "90 minute", price: "400k" },
-      { duration: "120 minute", price: "500k" },
-    ],
-  },
-  {
-    name: "Deep Tissue",
-    image: deep,
-    prices: [
-      { duration: "60 minute", price: "300k" },
-      { duration: "90 minute", price: "400k" },
-      { duration: "120 minute", price: "500k" },
-    ],
-  },
-  {
-    name: "Thai Massage",
-    image: thaiMassage,
-    prices: [
-      { duration: "60 minute", price: "350k" },
-      { duration: "90 minute", price: "450k" },
-      { duration: "120 minute", price: "550k" },
-    ],
-  },
+  { name: "Balinese Massage", image: massagebali, prices: [ { duration: "60 minute", price: "250k" }, { duration: "90 minute", price: "350k" }, { duration: "120 minute", price: "450k" } ] },
+  { name: "Reflexology", image: reflexology, prices: [ { duration: "60 minute", price: "200k" }, { duration: "90 minute", price: "250k" }, { duration: "120 minute", price: "350k" } ] },
+  { name: "Facial Acupressure", image: "https://images.pexels.com/photos/6628820/pexels-photo-6628820.jpeg?auto=compress&cs=tinysrgb&w=800", prices: [ { duration: "60 minute", price: "300k" }, { duration: "90 minute", price: "400k" }, { duration: "120 minute", price: "500k" } ] },
+  { name: "Massage & Scrub", image: scrub, prices: [ { duration: "60 minute", price: "300k" }, { duration: "90 minute", price: "400k" }, { duration: "120 minute", price: "500k" } ] },
+  { name: "Hot Stone Massage", image: hotstone, prices: [ { duration: "60 minute", price: "300k" }, { duration: "90 minute", price: "400k" }, { duration: "120 minute", price: "500k" } ] },
+  { name: "Aromatherapy", image: aromateraphy, prices: [ { duration: "60 minute", price: "300k" }, { duration: "90 minute", price: "400k" }, { duration: "120 minute", price: "500k" } ] },
+  { name: "Deep Tissue", image: deep, prices: [ { duration: "60 minute", price: "300k" }, { duration: "90 minute", price: "400k" }, { duration: "120 minute", price: "500k" } ] },
+  { name: "Thai Massage", image: thaiMassage, prices: [ { duration: "60 minute", price: "350k" }, { duration: "90 minute", price: "450k" }, { duration: "120 minute", price: "550k" } ] },
 ];
 
 export default function Services() {
   return (
-    <section
-      id="services"
-      className="py-24 px-6 md:px-16 bg-gradient-to-b from-gray-50 to-white"
-    >
+    <section id="services" className="py-24 px-6 md:px-16 bg-gradient-to-b from-gray-50 to-white">
       <h2 className="text-5xl font-extrabold text-center mb-16">
         <span className="bg-gradient-to-r from-[#2c0a71] via-[#4318a3] to-yellow-400 bg-clip-text text-transparent">
           Our Premium Services
@@ -115,9 +47,7 @@ export default function Services() {
                 {s.prices.map((p, idx) => (
                   <li key={idx} className="flex justify-between">
                     <span>{p.duration}</span>
-                    <span className="font-semibold text-yellow-600">
-                      {p.price}
-                    </span>
+                    <span className="font-semibold text-yellow-600">{p.price}</span>
                   </li>
                 ))}
               </ul>
@@ -129,7 +59,7 @@ export default function Services() {
                 rel="noopener noreferrer"
                 className="block text-center bg-gradient-to-r from-[#2c0a71] to-[#4318a3] hover:from-[#4318a3] hover:to-[#2c0a71] text-white px-5 py-3 rounded-full shadow-xl transition transform hover:scale-105 border border-yellow-400/30"
               >
-                🌟 Book Now
+                Book Now
               </a>
             </div>
           </div>

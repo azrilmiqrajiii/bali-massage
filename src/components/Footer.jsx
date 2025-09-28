@@ -22,60 +22,70 @@ export default function Footer() {
 
         {/* Quick Links */}
         <div>
-          <h4 className="font-semibold text-lg mb-4 text-yellow-300">
+          <h4 className="font-semibold text-lg mb-4 text-[#f5e6a3]">
             Quick Links
           </h4>
           <ul className="space-y-2 text-gray-200">
             <li>
-              <a href="#about" className="hover:text-yellow-300 transition">
+              <a href="#about" className="hover:text-[#f5e6a3] transition">
                 About
               </a>
             </li>
             <li>
-              <a href="#services" className="hover:text-yellow-300 transition">
+              <a href="#services" className="hover:text-[#f5e6a3] transition">
                 Services
               </a>
             </li>
             <li>
-              <a href="#gallery" className="hover:text-yellow-300 transition">
+              <a href="#gallery" className="hover:text-[#f5e6a3] transition">
                 Gallery
               </a>
             </li>
             <li>
-              <a href="#contact" className="hover:text-yellow-300 transition">
+              <a href="#contact" className="hover:text-[#f5e6a3] transition">
                 Contact
               </a>
             </li>
           </ul>
         </div>
 
-        {/* Socials */}
-        <div>
-          <h4 className="font-semibold text-lg mb-4 text-yellow-300">
+        {/* Socials + Book Button */}
+        <div className="flex flex-col items-start md:items-center">
+          <h4 className="font-semibold text-lg mb-4 text-[#f5e6a3]">
             Connect With Us
           </h4>
-          <div className="flex space-x-4">
+          <div className="flex space-x-4 mb-6">
             <a
               href="https://wa.me/6285934358938"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 bg-white/10 rounded-full hover:bg-yellow-400 hover:text-black transition shadow-md"
+              className="p-3 bg-white/10 rounded-full hover:bg-[#f5e6a3] hover:text-black transition shadow-md"
             >
               <MessageCircle className="w-5 h-5" />
             </a>
             <a
               href="#"
-              className="p-3 bg-white/10 rounded-full hover:bg-yellow-400 hover:text-black transition shadow-md"
+              className="p-3 bg-white/10 rounded-full hover:bg-[#f5e6a3] hover:text-black transition shadow-md"
             >
               <Instagram className="w-5 h-5" />
             </a>
             <a
               href="#"
-              className="p-3 bg-white/10 rounded-full hover:bg-yellow-400 hover:text-black transition shadow-md"
+              className="p-3 bg-white/10 rounded-full hover:bg-[#f5e6a3] hover:text-black transition shadow-md"
             >
               <Facebook className="w-5 h-5" />
             </a>
           </div>
+
+          {/* Book Now Button (Gold White) */}
+          <a
+            href="https://wa.me/6285934358938?text=Hi,%20I%20would%20like%20to%20book%20a%20spa%20service"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#f9f5d7] text-black px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-[#f5e6a3] transition"
+          >
+            Book Now via WhatsApp
+          </a>
         </div>
       </div>
 
