@@ -4,25 +4,28 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="py-24 bg-gradient-to-b from-white via-emerald-50 to-white"
+      className="py-24 bg-gradient-to-b from-white via-gray-50 to-white"
     >
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900 mb-4">
-            Get In Touch with Lestari Bali Spa
+          <h2 className="text-5xl font-extrabold tracking-tight mb-4">
+            <span className="bg-gradient-to-r from-[#2c0a71] via-[#4318a3] to-yellow-400 bg-clip-text text-transparent">
+              Get In Touch
+            </span>
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
             Contact us for reservations or inquiries. Our team is ready to
-            assist you promptly and with a friendly service.
+            assist you with friendly, professional service.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div className="space-y-8">
-            <div className="flex items-start space-x-4 bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition">
-              <MapPin className="text-emerald-600 w-8 h-8 flex-shrink-0" />
+            {/* Address */}
+            <div className="flex items-start space-x-4 bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-lg border border-yellow-400/20 hover:shadow-2xl transition">
+              <MapPin className="text-yellow-400 w-8 h-8 flex-shrink-0" />
               <div>
-                <h3 className="font-semibold text-lg text-gray-900 mb-1">
+                <h3 className="font-semibold text-lg text-[#2c0a71] mb-1">
                   Address
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
@@ -32,7 +35,7 @@ export default function Contact() {
                     href="https://maps.app.goo.gl/1wy9gA76sh4zxMhA7"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-emerald-600 font-medium hover:underline"
+                    className="text-yellow-400 font-medium hover:underline"
                   >
                     📍 View on Google Maps
                   </a>
@@ -40,10 +43,11 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="flex items-start space-x-4 bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition">
-              <Phone className="text-emerald-600 w-8 h-8 flex-shrink-0" />
+            {/* Phone */}
+            <div className="flex items-start space-x-4 bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-lg border border-yellow-400/20 hover:shadow-2xl transition">
+              <Phone className="text-yellow-400 w-8 h-8 flex-shrink-0" />
               <div>
-                <h3 className="font-semibold text-lg text-gray-900 mb-1">
+                <h3 className="font-semibold text-lg text-[#2c0a71] mb-1">
                   Phone
                 </h3>
                 <p className="text-gray-600">+62 859-3435-8938</p>
@@ -51,17 +55,17 @@ export default function Contact() {
             </div>
 
             {/* WhatsApp */}
-            <div className="flex items-start space-x-4 bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition">
-              <MessageCircle className="text-emerald-600 w-8 h-8 flex-shrink-0" />
+            <div className="flex items-start space-x-4 bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-lg border border-yellow-400/20 hover:shadow-2xl transition">
+              <MessageCircle className="text-yellow-400 w-8 h-8 flex-shrink-0" />
               <div>
-                <h3 className="font-semibold text-lg text-gray-900 mb-3">
+                <h3 className="font-semibold text-lg text-[#2c0a71] mb-3">
                   WhatsApp
                 </h3>
                 <a
                   href="https://wa.me/6285934358938?text=Halo,%20saya%20mau%20booking%20massage"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-full shadow-md transition transform hover:scale-105"
+                  className="inline-block bg-gradient-to-r from-[#2c0a71] to-[#4318a3] hover:from-[#4318a3] hover:to-[#2c0a71] text-white px-6 py-3 rounded-full shadow-xl transition transform hover:scale-105 border border-yellow-400/30"
                 >
                   💬 Chat via WhatsApp
                 </a>
@@ -69,7 +73,8 @@ export default function Contact() {
             </div>
           </div>
 
-          <div className="rounded-2xl overflow-hidden shadow-xl border border-gray-200">
+          {/* Map */}
+          <div className="rounded-2xl overflow-hidden shadow-2xl border border-yellow-400/20">
             <iframe
               src="https://maps.google.com/maps?q=-8.6835383,115.179601&z=16&output=embed"
               width="100%"
