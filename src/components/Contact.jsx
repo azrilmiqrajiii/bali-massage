@@ -50,7 +50,7 @@ export default function Contact() {
                 <h3 className="font-semibold text-lg text-[#2c0a71] mb-1">
                   Phone
                 </h3>
-                <p className="text-gray-600">+62 859-3435-8938</p>
+                <p className="text-gray-600">+62 817-488-4328</p>
               </div>
             </div>
 
@@ -62,7 +62,7 @@ export default function Contact() {
                   WhatsApp
                 </h3>
                 <a
-                  href="https://wa.me/6285934358938?text=Halo,%20saya%20mau%20booking%20massage"
+                  href="https://wa.me/628174884328?text=Halo,%20saya%20mau%20booking%20massage"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block bg-gradient-to-r from-[#2c0a71] to-[#4318a3] hover:from-[#4318a3] hover:to-[#2c0a71] text-white px-6 py-3 rounded-full shadow-xl transition transform hover:scale-105 border border-yellow-400/30"

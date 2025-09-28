@@ -24,9 +24,7 @@ export default function Navbar() {
         <a href="#services" className="hover:text-[#2c0a71] transition">
           Services
         </a>
-        <a href="#gallery" className="hover:text-[#2c0a71] transition">
-          Gallery
-        </a>
+
         <a href="#contact" className="hover:text-[#2c0a71] transition">
           Contact
         </a>
@@ -35,7 +33,7 @@ export default function Navbar() {
       {/* Book Now button */}
       <div className="hidden md:inline-block">
         <a
-          href="https://wa.me/6285934358938?text=Halo,%20saya%20mau%20booking%20massage"
+          href="https://wa.me/628174884328?text=Halo,%20saya%20mau%20booking%20massage"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-gradient-to-r from-[#2c0a71] via-[#4318a3] to-[#6d28d9] hover:from-[#4318a3] hover:to-[#2c0a71] text-white px-6 py-3 rounded-full shadow-xl transition transform hover:scale-105 border border-[#6d28d9]/40 font-medium"

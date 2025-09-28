@@ -37,11 +37,6 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a href="#gallery" className="hover:text-[#f5e6a3] transition">
-                Gallery
-              </a>
-            </li>
-            <li>
               <a href="#contact" className="hover:text-[#f5e6a3] transition">
                 Contact
               </a>
@@ -90,7 +85,10 @@ export default function Footer() {
       </div>
 
       <div className="text-center text-gray-300 text-sm mt-12 border-t border-white/20 pt-6">
-        © {new Date().getFullYear()} Lestari Bali Spa. All Rights Reserved.
+        <p>
+          © {new Date().getFullYear()} Lestari Bali Spa — Personal Website of{" "}
+          <span className="font-semibold">Indriani Lestari</span>
+        </p>
       </div>
     </footer>
   );
