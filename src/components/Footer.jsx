@@ -56,7 +56,7 @@ export default function Footer() {
           </h4>
           <div className="flex space-x-4 mb-6">
             <a
-              href="https://wa.me/6285934358938"
+              href="https://wa.me/628174884328"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 bg-white/10 rounded-full hover:bg-[#f5e6a3] hover:text-black transition shadow-md"
@@ -64,7 +64,7 @@ export default function Footer() {
               <MessageCircle className="w-5 h-5" />
             </a>
             <a
-              href="#"
+              href="https://instagram.com/indrylestariii30"
               className="p-3 bg-white/10 rounded-full hover:bg-[#f5e6a3] hover:text-black transition shadow-md"
             >
               <Instagram className="w-5 h-5" />
@@ -79,7 +79,7 @@ export default function Footer() {
 
           {/* Book Now Button (Gold White) */}
           <a
-            href="https://wa.me/6285934358938?text=Hi,%20I%20would%20like%20to%20book%20a%20spa%20service"
+            href="https://wa.me/628174884328?text=Hi,%20I%20would%20like%20to%20book%20a%20spa%20service"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-[#f9f5d7] text-black px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-[#f5e6a3] transition"
