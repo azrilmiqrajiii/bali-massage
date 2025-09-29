@@ -4,38 +4,36 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/src/assets/icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lestari Bali Spa - Massage & Home Service</title>
 
-    <!-- Title -->
-    <title>Lestari Bali Spa | Balinese Massage & Spa in Denpasar</title>
-
-    <!-- Meta SEO -->
+    <!-- SEO Meta -->
     <meta
       name="description"
-      content="Enjoy the best Balinese massage, spa, and reflexology in Denpasar, Bali. Professional therapists available at your villa, hotel, or home. Book now for a relaxing experience!"
+      content="Enjoy professional Balinese massage, spa, reflexology, and aromatherapy in Denpasar, Bali. Our therapists come directly to your villa, hotel, or home."
     />
     <meta
       name="keywords"
-      content="massage bali, spa denpasar, balinese massage, massage in bali, reflexology bali, spa near me bali, best massage in bali, home massage bali, lestari bali spa"
+      content="Bali massage, spa in Denpasar, home service massage Bali, reflexology Bali, Balinese massage, Lestari Bali Spa"
     />
     <meta name="robots" content="index, follow" />
 
     <!-- Open Graph -->
     <meta
       property="og:title"
-      content="Lestari Bali Spa - Balinese Massage in Bali"
+      content="Lestari Bali Spa - Professional Massage & Spa in Bali"
     />
     <meta
       property="og:description"
-      content="Spa panggilan profesional di Denpasar, Bali. Nikmati Balinese massage, reflexology, aromatherapy, dan layanan spa eksklusif langsung di villa atau hotel Anda."
+      content="Book Balinese massage & spa in Bali with professional therapists. Available for home service in villas, hotels, and residences around Denpasar."
     />
     <meta
       property="og:image"
-      content="https://lestarispabalihomemassage.com/assets/cover-spa.jpg"
+      content="https://lestarispabalihomemassage.com/cover.jpg"
     />
-    <meta property="og:url" content="https://lestarispabalihomemassage.com/" />
+    <meta property="og:url" content="https://lestarispabalihomemassage.com" />
     <meta property="og:type" content="business.business" />
 
-    <!-- Twitter Card -->
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
@@ -43,20 +41,24 @@
     />
     <meta
       name="twitter:description"
-      content="Balinese massage & spa in Denpasar, Bali. Professional therapists at your villa, hotel, or home. Book now for relaxation!"
+      content="Balinese massage, spa, reflexology, and aromatherapy with professional therapists. Available for home service in Denpasar and surrounding areas."
     />
     <meta
       name="twitter:image"
-      content="https://lestarispabalihomemassage.com/assets/cover-spa.jpg"
+      content="https://lestarispabalihomemassage.com/cover.jpg"
     />
 
-    <!-- Schema.org JSON-LD -->
+    <!-- JSON-LD Schema -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Spa",
+        "@type": "HealthAndBeautyBusiness",
         "name": "Lestari Bali Spa",
-        "image": "https://lestarispabalihomemassage.com/assets/cover-spa.jpg",
+        "image": "https://lestarispabalihomemassage.com/logo.png",
+        "@id": "https://lestarispabalihomemassage.com",
+        "url": "https://lestarispabalihomemassage.com",
+        "telephone": "+62 817-4884-328",
+        "priceRange": "$$",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Padangsambian Klod",
@@ -64,18 +66,48 @@
           "addressRegion": "Bali",
           "addressCountry": "ID"
         },
-        "telephone": "+62 817-4884-328",
-        "url": "https://lestarispabalihomemassage.com/",
-        "priceRange": "$$",
-        "openingHours": "Mo-Su 10:00-23:00",
-        "areaServed": {
-          "@type": "Place",
-          "name": "Bali"
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -8.670458,
+          "longitude": 115.212629
         }
       }
     </script>
-  </head>
 
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do you provide massage service in hotels or villas?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, Lestari Bali Spa offers professional massage and spa services directly to your hotel, villa, or private residence around Denpasar."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are the therapists certified and professional?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, all of our therapists are experienced and trained in Balinese massage, spa treatments, reflexology, and aromatherapy."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How can I make a booking?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You can easily book via WhatsApp at +62 817-4884-328."
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
